@@ -1,0 +1,100 @@
+{
+  "manifest_version": 3,
+  "name": "简历筛查器",
+  "version": "3.2.25",
+  "description": "v3.2.25：修复脉脉新增人才学校专业提取，采用上传正文同源及最高学历同条记录规则",
+  "background": {
+    "service_worker": "src/core/background.js"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+P"
+      },
+      "description": "Open a page on Alt+P"
+    }
+  },
+  "action": {
+    "default_popup": "src/ui/popup.html",
+    "default_icon": {
+      "16": "assets/images/icons/icon.png",
+      "48": "assets/images/icons/icon.png",
+      "128": "assets/images/icons/icon.png"
+    }
+  },
+  "icons": {
+    "16": "assets/images/icons/icon.png",
+    "48": "assets/images/icons/icon.png",
+    "128": "assets/images/icons/icon.png"
+  },
+  "permissions": [
+    "cookies",
+    "storage",
+    "activeTab",
+    "tabs",
+    "scripting",
+    "contextMenus",
+    "downloads",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "https://model.example.invalid/*",
+    "https://rd6.zhaopin.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://maimai.cn/*"
+      ],
+      "js": [
+        "src/utils/highestEducation.js",
+        "src/core/maimaiSearchRequestCapture.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/utils/highestEducation.js",
+        "src/core/quoraApiGuard.js",
+        "src/core/content.js",
+        "assets/libs/xlsx.mini.min.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://rd6.zhaopin.com/*"
+      ],
+      "js": [
+        "src/utils/highestEducation.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "ahicon.png",
+        "src/ui/intro.html",
+        "assets/images/intro/*",
+        "assets/libs/xlsx.mini.min.js",
+        "data/zhilian_industry_code.json",
+        "data/zhilian_position_code.json",
+        "data/zhilian_region_code.json",
+        "data/zhilian_rd_dict_cache.json",
+        "data/liepin_zhilian_industry_map.json",
+        "data/liepin_zhilian_position_map.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

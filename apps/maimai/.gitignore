@@ -1,0 +1,10 @@
+# Common credentials, runtime data and build outputs are ignored at repository root.
+# Keep module source, dictionaries, documentation, tests and dependency manifests tracked.
+*.local
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.tmp-video-frames*/
+.chrome-cdp/
+company-job-exports/
+outputs/

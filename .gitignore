@@ -1,0 +1,62 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+**/cookies/
+**/cookie/
+**/browser-profile/
+**/browser-profiles/
+**/user-data/
+**/User Data/
+**/ChromeCookie*
+*.pem
+*.key
+*.p12
+*.pfx
+*.pkl
+*.pickle
+
+# Runtime data and candidate exports
+**/save/
+**/log/
+**/logs/
+**/debug_im/
+*.log
+*.xlsx
+*.xls
+*.csv
+*.pdf
+*.docx
+*.sqlite
+*.sqlite3
+*.db
+
+# Build/dependency outputs
+**/.venv/
+**/venv/
+**/node_modules/
+**/dist/
+**/build/
+**/__pycache__/
+*.py[cod]
+*.exe
+*.dll
+*.dmg
+*.zip
+*.bak
+**/coverage/
+**/.pytest_cache/
+
+# Machine/editor files
+.DS_Store
+Thumbs.db
+**/.idea/
+**/.vscode/
+*.swp
+*.swo
+
+# Local open-source service configuration and scan outputs
+config.local.json
+config.*.local.json
+*secrets-report*.json

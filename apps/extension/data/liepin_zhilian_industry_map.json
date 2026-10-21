@@ -1,0 +1,1532 @@
+{
+  "source": "https://bdfe.liepin.com/data/industry/V2/20231001/20251114/0.js",
+  "generatedAt": "2026-07-28T09:47:45.009Z",
+  "summary": {
+    "unmapped": 72,
+    "manual_override": 26,
+    "exact_unique": 43
+  },
+  "mappings": {
+    "000": {
+      "sourceName": "全部行业",
+      "sourceParentCode": "",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H01": {
+      "sourceName": "AI/互联网/IT",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 100030000,
+          "label": "互联网",
+          "path": [
+            "互联网/IT/电子/通信",
+            "互联网"
+          ]
+        },
+        {
+          "value": 100040000,
+          "label": "IT服务",
+          "path": [
+            "互联网/IT/电子/通信",
+            "IT服务"
+          ]
+        },
+        {
+          "value": 100050000,
+          "label": "计算机软件",
+          "path": [
+            "互联网/IT/电子/通信",
+            "计算机软件"
+          ]
+        }
+      ]
+    },
+    "H02": {
+      "sourceName": "电子/通信/半导体",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 100010000,
+          "label": "电子/半导体/集成电路",
+          "path": [
+            "互联网/IT/电子/通信",
+            "电子/半导体/集成电路"
+          ]
+        },
+        {
+          "value": 100090000,
+          "label": "通信/网络设备",
+          "path": [
+            "互联网/IT/电子/通信",
+            "通信/网络设备"
+          ]
+        },
+        {
+          "value": 100140000,
+          "label": "运营商/增值服务",
+          "path": [
+            "互联网/IT/电子/通信",
+            "运营商/增值服务"
+          ]
+        }
+      ]
+    },
+    "H03": {
+      "sourceName": "房地产/建筑",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 400000000,
+          "label": "房地产/建筑",
+          "path": [
+            "房地产/建筑"
+          ]
+        }
+      ]
+    },
+    "H04": {
+      "sourceName": "金融",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 300000000,
+          "label": "金融业",
+          "path": [
+            "金融业"
+          ]
+        }
+      ]
+    },
+    "H05": {
+      "sourceName": "消费品",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 700000000,
+          "label": "批发/零售/贸易",
+          "path": [
+            "批发/零售/贸易"
+          ]
+        },
+        {
+          "value": 700010000,
+          "label": "快速消费品",
+          "path": [
+            "批发/零售/贸易",
+            "快速消费品"
+          ]
+        },
+        {
+          "value": 700030000,
+          "label": "耐用消费品",
+          "path": [
+            "批发/零售/贸易",
+            "耐用消费品"
+          ]
+        }
+      ]
+    },
+    "H06": {
+      "sourceName": "医疗健康",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1300000000,
+          "label": "生物医药/医疗",
+          "path": [
+            "生物医药/医疗"
+          ]
+        }
+      ]
+    },
+    "H07": {
+      "sourceName": "汽车",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1600000000,
+          "label": "汽车",
+          "path": [
+            "汽车"
+          ]
+        }
+      ]
+    },
+    "H08": {
+      "sourceName": "机械/制造",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 500000000,
+          "label": "制造业",
+          "path": [
+            "制造业"
+          ]
+        }
+      ]
+    },
+    "H09": {
+      "sourceName": "教育培训/科研",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1200000000,
+          "label": "教育培训/科研",
+          "path": [
+            "教育培训/科研"
+          ]
+        }
+      ]
+    },
+    "H10": {
+      "sourceName": "专业服务",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 800000000,
+          "label": "专业服务",
+          "path": [
+            "专业服务"
+          ]
+        }
+      ]
+    },
+    "H11": {
+      "sourceName": "广告/传媒/文化/体育",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 900000000,
+          "label": "广告/传媒/文化/体育",
+          "path": [
+            "广告/传媒/文化/体育"
+          ]
+        }
+      ]
+    },
+    "H12": {
+      "sourceName": "生活服务",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1500000000,
+          "label": "生活服务",
+          "path": [
+            "生活服务"
+          ]
+        }
+      ]
+    },
+    "H13": {
+      "sourceName": "交通/物流/贸易/零售",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1000000000,
+          "label": "交通运输/仓储/物流",
+          "path": [
+            "交通运输/仓储/物流"
+          ]
+        },
+        {
+          "value": 700000000,
+          "label": "批发/零售/贸易",
+          "path": [
+            "批发/零售/贸易"
+          ]
+        }
+      ]
+    },
+    "H14": {
+      "sourceName": "能源/化工/环保",
+      "sourceParentCode": "",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1100000000,
+          "label": "能源/环保/矿产",
+          "path": [
+            "能源/环保/矿产"
+          ]
+        },
+        {
+          "value": 1100060000,
+          "label": "化工",
+          "path": [
+            "能源/环保/矿产",
+            "化工"
+          ]
+        }
+      ]
+    },
+    "H15": {
+      "sourceName": "政府/非营利组织/其他",
+      "sourceParentCode": "",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0001": {
+      "sourceName": "游戏",
+      "sourceParentCode": "H01",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 100120000,
+          "label": "游戏",
+          "path": [
+            "互联网/IT/电子/通信",
+            "游戏"
+          ]
+        }
+      ]
+    },
+    "H0002": {
+      "sourceName": "电子商务",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100020000,
+          "label": "电子商务",
+          "path": [
+            "互联网/IT/电子/通信",
+            "电子商务"
+          ]
+        }
+      ]
+    },
+    "H0003": {
+      "sourceName": "新零售",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100190000,
+          "label": "新零售",
+          "path": [
+            "互联网/IT/电子/通信",
+            "新零售"
+          ]
+        }
+      ]
+    },
+    "H0004": {
+      "sourceName": "在线社交/媒体",
+      "sourceParentCode": "H01",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0005": {
+      "sourceName": "生活服务O2O",
+      "sourceParentCode": "H01",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0006": {
+      "sourceName": "在线教育",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100160000,
+          "label": "在线教育",
+          "path": [
+            "互联网/IT/电子/通信",
+            "在线教育"
+          ]
+        }
+      ]
+    },
+    "H0007": {
+      "sourceName": "互联网医疗",
+      "sourceParentCode": "H01",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0008": {
+      "sourceName": "云计算/大数据",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100130000,
+          "label": "云计算/大数据",
+          "path": [
+            "互联网/IT/电子/通信",
+            "云计算/大数据"
+          ]
+        }
+      ]
+    },
+    "H0009": {
+      "sourceName": "人工智能",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100080000,
+          "label": "人工智能",
+          "path": [
+            "互联网/IT/电子/通信",
+            "人工智能"
+          ]
+        }
+      ]
+    },
+    "H0010": {
+      "sourceName": "物联网",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100180000,
+          "label": "物联网",
+          "path": [
+            "互联网/IT/电子/通信",
+            "物联网"
+          ]
+        }
+      ]
+    },
+    "H0011": {
+      "sourceName": "区块链",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100170000,
+          "label": "区块链",
+          "path": [
+            "互联网/IT/电子/通信",
+            "区块链"
+          ]
+        }
+      ]
+    },
+    "H0012": {
+      "sourceName": "网络/信息安全",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100100000,
+          "label": "网络/信息安全",
+          "path": [
+            "互联网/IT/电子/通信",
+            "网络/信息安全"
+          ]
+        }
+      ]
+    },
+    "H0013": {
+      "sourceName": "计算机软件",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100050000,
+          "label": "计算机软件",
+          "path": [
+            "互联网/IT/电子/通信",
+            "计算机软件"
+          ]
+        }
+      ]
+    },
+    "H0014": {
+      "sourceName": "计算机硬件",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100060000,
+          "label": "计算机硬件",
+          "path": [
+            "互联网/IT/电子/通信",
+            "计算机硬件"
+          ]
+        }
+      ]
+    },
+    "H0015": {
+      "sourceName": "智能硬件/消费电子",
+      "sourceParentCode": "H01",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0016": {
+      "sourceName": "IT服务",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100040000,
+          "label": "IT服务",
+          "path": [
+            "互联网/IT/电子/通信",
+            "IT服务"
+          ]
+        }
+      ]
+    },
+    "H0017": {
+      "sourceName": "互联网",
+      "sourceParentCode": "H01",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100030000,
+          "label": "互联网",
+          "path": [
+            "互联网/IT/电子/通信",
+            "互联网"
+          ]
+        }
+      ]
+    },
+    "H0018": {
+      "sourceName": "电子/半导体/集成电路",
+      "sourceParentCode": "H02",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100010000,
+          "label": "电子/半导体/集成电路",
+          "path": [
+            "互联网/IT/电子/通信",
+            "电子/半导体/集成电路"
+          ]
+        }
+      ]
+    },
+    "H0019": {
+      "sourceName": "智能硬件/消费电子",
+      "sourceParentCode": "H02",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0020": {
+      "sourceName": "运营商/增值服务",
+      "sourceParentCode": "H02",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 100140000,
+          "label": "运营商/增值服务",
+          "path": [
+            "互联网/IT/电子/通信",
+            "运营商/增值服务"
+          ]
+        }
+      ]
+    },
+    "H0021": {
+      "sourceName": "通信设备",
+      "sourceParentCode": "H02",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0022": {
+      "sourceName": "房地产开发经营",
+      "sourceParentCode": "H03",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0023": {
+      "sourceName": "房地产租赁/中介",
+      "sourceParentCode": "H03",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0024": {
+      "sourceName": "物业/商业管理",
+      "sourceParentCode": "H03",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0025": {
+      "sourceName": "建材",
+      "sourceParentCode": "H03",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 400060000,
+          "label": "建材",
+          "path": [
+            "房地产/建筑",
+            "建材"
+          ]
+        }
+      ]
+    },
+    "H0026": {
+      "sourceName": "工程管理/勘察/监理",
+      "sourceParentCode": "H03",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0027": {
+      "sourceName": "建筑/工程设计",
+      "sourceParentCode": "H03",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0028": {
+      "sourceName": "工程施工",
+      "sourceParentCode": "H03",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 400030000,
+          "label": "工程施工",
+          "path": [
+            "房地产/建筑",
+            "工程施工"
+          ]
+        }
+      ]
+    },
+    "H0029": {
+      "sourceName": "装饰装修",
+      "sourceParentCode": "H03",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 400040000,
+          "label": "装饰装修",
+          "path": [
+            "房地产/建筑",
+            "装饰装修"
+          ]
+        }
+      ]
+    },
+    "H0030": {
+      "sourceName": "银行",
+      "sourceParentCode": "H04",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 300070000,
+          "label": "银行",
+          "path": [
+            "金融业",
+            "银行"
+          ]
+        }
+      ]
+    },
+    "H0031": {
+      "sourceName": "保险",
+      "sourceParentCode": "H04",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 300010000,
+          "label": "保险",
+          "path": [
+            "金融业",
+            "保险"
+          ]
+        }
+      ]
+    },
+    "H0032": {
+      "sourceName": "基金/证券/期货",
+      "sourceParentCode": "H04",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0033": {
+      "sourceName": "资产管理",
+      "sourceParentCode": "H04",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0034": {
+      "sourceName": "担保/拍卖/典当",
+      "sourceParentCode": "H04",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0035": {
+      "sourceName": "信托",
+      "sourceParentCode": "H04",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 300060000,
+          "label": "信托",
+          "path": [
+            "金融业",
+            "信托"
+          ]
+        }
+      ]
+    },
+    "H0036": {
+      "sourceName": "科技金融",
+      "sourceParentCode": "H04",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0037": {
+      "sourceName": "融资租赁/保理",
+      "sourceParentCode": "H04",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0038": {
+      "sourceName": "其他金融",
+      "sourceParentCode": "H04",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0039": {
+      "sourceName": "食品/饮料/酒水",
+      "sourceParentCode": "H05",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 700050000,
+          "label": "食品/饮料",
+          "path": [
+            "批发/零售/贸易",
+            "食品/饮料"
+          ]
+        },
+        {
+          "value": 700060000,
+          "label": "烟草/酒业",
+          "path": [
+            "批发/零售/贸易",
+            "烟草/酒业"
+          ]
+        }
+      ]
+    },
+    "H0040": {
+      "sourceName": "日化",
+      "sourceParentCode": "H05",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 700070000,
+          "label": "日化",
+          "path": [
+            "批发/零售/贸易",
+            "日化"
+          ]
+        }
+      ]
+    },
+    "H0041": {
+      "sourceName": "烟草",
+      "sourceParentCode": "H05",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0042": {
+      "sourceName": "服装/纺织/皮革",
+      "sourceParentCode": "H05",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 700110000,
+          "label": "服装/纺织/皮革",
+          "path": [
+            "批发/零售/贸易",
+            "服装/纺织/皮革"
+          ]
+        }
+      ]
+    },
+    "H0043": {
+      "sourceName": "家具/家居",
+      "sourceParentCode": "H05",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0044": {
+      "sourceName": "家电",
+      "sourceParentCode": "H05",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0045": {
+      "sourceName": "办公用品/设备",
+      "sourceParentCode": "H05",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 700130000,
+          "label": "办公用品/设备",
+          "path": [
+            "批发/零售/贸易",
+            "办公用品/设备"
+          ]
+        }
+      ]
+    },
+    "H0046": {
+      "sourceName": "工艺品",
+      "sourceParentCode": "H05",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0047": {
+      "sourceName": "珠宝/首饰",
+      "sourceParentCode": "H05",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 700090000,
+          "label": "珠宝/首饰",
+          "path": [
+            "批发/零售/贸易",
+            "珠宝/首饰"
+          ]
+        }
+      ]
+    },
+    "H0048": {
+      "sourceName": "文娱用品/器材",
+      "sourceParentCode": "H05",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0049": {
+      "sourceName": "日用杂品",
+      "sourceParentCode": "H05",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0050": {
+      "sourceName": "制药",
+      "sourceParentCode": "H06",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0051": {
+      "sourceName": "生物技术",
+      "sourceParentCode": "H06",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0052": {
+      "sourceName": "医疗器械",
+      "sourceParentCode": "H06",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 500210000,
+          "label": "医疗设备/器械",
+          "path": [
+            "生物医药/医疗",
+            "医疗设备/器械"
+          ]
+        }
+      ]
+    },
+    "H0053": {
+      "sourceName": "医疗机构",
+      "sourceParentCode": "H06",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0054": {
+      "sourceName": "医药流通",
+      "sourceParentCode": "H06",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0055": {
+      "sourceName": "医药外包",
+      "sourceParentCode": "H06",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0056": {
+      "sourceName": "汽车零部件及配件",
+      "sourceParentCode": "H07",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1600020000,
+          "label": "汽车零部件",
+          "path": [
+            "汽车",
+            "汽车零部件"
+          ]
+        }
+      ]
+    },
+    "H0057": {
+      "sourceName": "整车制造",
+      "sourceParentCode": "H07",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0058": {
+      "sourceName": "新能源汽车",
+      "sourceParentCode": "H07",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 1600030000,
+          "label": "新能源汽车",
+          "path": [
+            "汽车",
+            "新能源汽车"
+          ]
+        }
+      ]
+    },
+    "H0059": {
+      "sourceName": "汽车交易/后市场",
+      "sourceParentCode": "H07",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0060": {
+      "sourceName": "机械/设备",
+      "sourceParentCode": "H08",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 500000000,
+          "label": "制造业",
+          "path": [
+            "制造业"
+          ]
+        }
+      ]
+    },
+    "H0061": {
+      "sourceName": "电气机械/器材",
+      "sourceParentCode": "H08",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0062": {
+      "sourceName": "仪器仪表",
+      "sourceParentCode": "H08",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0063": {
+      "sourceName": "轨道交通/船舶设备",
+      "sourceParentCode": "H08",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0064": {
+      "sourceName": "航空/航天设备",
+      "sourceParentCode": "H08",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0065": {
+      "sourceName": "新材料",
+      "sourceParentCode": "H08",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 500000250,
+          "label": "新材料",
+          "path": [
+            "制造业",
+            "新材料"
+          ]
+        }
+      ]
+    },
+    "H0066": {
+      "sourceName": "金属制品",
+      "sourceParentCode": "H08",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0067": {
+      "sourceName": "非金属矿物制品",
+      "sourceParentCode": "H08",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0068": {
+      "sourceName": "橡胶/塑料制品",
+      "sourceParentCode": "H08",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0069": {
+      "sourceName": "印刷/包装/造纸",
+      "sourceParentCode": "H08",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 500190000,
+          "label": "印刷/包装/造纸",
+          "path": [
+            "制造业",
+            "印刷/包装/造纸"
+          ]
+        }
+      ]
+    },
+    "H0070": {
+      "sourceName": "工业自动化",
+      "sourceParentCode": "H08",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 500230000,
+          "label": "工业自动化",
+          "path": [
+            "制造业",
+            "工业自动化"
+          ]
+        }
+      ]
+    },
+    "H0071": {
+      "sourceName": "家电",
+      "sourceParentCode": "H08",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0072": {
+      "sourceName": "家具/家居",
+      "sourceParentCode": "H08",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 700120000,
+          "label": "家具/家居/家电",
+          "path": [
+            "批发/零售/贸易",
+            "家具/家居/家电"
+          ]
+        }
+      ]
+    },
+    "H0073": {
+      "sourceName": "其他制造业",
+      "sourceParentCode": "H08",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0074": {
+      "sourceName": "学前教育",
+      "sourceParentCode": "H09",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0075": {
+      "sourceName": "学校教育",
+      "sourceParentCode": "H09",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0076": {
+      "sourceName": "培训服务",
+      "sourceParentCode": "H09",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0077": {
+      "sourceName": "其他教育培训",
+      "sourceParentCode": "H09",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0078": {
+      "sourceName": "法律服务",
+      "sourceParentCode": "H10",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 800020000,
+          "label": "法律服务",
+          "path": [
+            "专业服务",
+            "法律服务"
+          ]
+        }
+      ]
+    },
+    "H0079": {
+      "sourceName": "人力资源服务",
+      "sourceParentCode": "H10",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 800080000,
+          "label": "人力资源服务",
+          "path": [
+            "专业服务",
+            "人力资源服务"
+          ]
+        }
+      ]
+    },
+    "H0080": {
+      "sourceName": "财务/审计/税务",
+      "sourceParentCode": "H10",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 800010000,
+          "label": "财务/审计/税务",
+          "path": [
+            "专业服务",
+            "财务/审计/税务"
+          ]
+        }
+      ]
+    },
+    "H0081": {
+      "sourceName": "知识产权服务",
+      "sourceParentCode": "H10",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0082": {
+      "sourceName": "翻译服务",
+      "sourceParentCode": "H10",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 800140000,
+          "label": "翻译服务",
+          "path": [
+            "专业服务",
+            "翻译服务"
+          ]
+        }
+      ]
+    },
+    "H0083": {
+      "sourceName": "咨询服务",
+      "sourceParentCode": "H10",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 800120000,
+          "label": "咨询服务",
+          "path": [
+            "专业服务",
+            "咨询服务"
+          ]
+        }
+      ]
+    },
+    "H0084": {
+      "sourceName": "租赁业",
+      "sourceParentCode": "H10",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0085": {
+      "sourceName": "检测/认证",
+      "sourceParentCode": "H10",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 800060000,
+          "label": "检测/认证",
+          "path": [
+            "专业服务",
+            "检测/认证"
+          ]
+        }
+      ]
+    },
+    "H0086": {
+      "sourceName": "学术/科研",
+      "sourceParentCode": "H09",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 1200030000,
+          "label": "学术/科研",
+          "path": [
+            "教育培训/科研",
+            "学术/科研"
+          ]
+        }
+      ]
+    },
+    "H0087": {
+      "sourceName": "专业技术服务",
+      "sourceParentCode": "H10",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 800110000,
+          "label": "专业技术服务",
+          "path": [
+            "专业服务",
+            "专业技术服务"
+          ]
+        }
+      ]
+    },
+    "H0088": {
+      "sourceName": "科技推广服务",
+      "sourceParentCode": "H10",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0089": {
+      "sourceName": "其他商务服务业",
+      "sourceParentCode": "H10",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0090": {
+      "sourceName": "广告/公关/会展",
+      "sourceParentCode": "H11",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0091": {
+      "sourceName": "广播/影视/录音",
+      "sourceParentCode": "H11",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0092": {
+      "sourceName": "新闻和出版业",
+      "sourceParentCode": "H11",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0093": {
+      "sourceName": "文化艺术业",
+      "sourceParentCode": "H11",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0094": {
+      "sourceName": "体育",
+      "sourceParentCode": "H11",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 900020000,
+          "label": "体育",
+          "path": [
+            "广告/传媒/文化/体育",
+            "体育"
+          ]
+        }
+      ]
+    },
+    "H0095": {
+      "sourceName": "餐饮业",
+      "sourceParentCode": "H12",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0096": {
+      "sourceName": "酒店/民宿",
+      "sourceParentCode": "H12",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 1500020000,
+          "label": "酒店/民宿",
+          "path": [
+            "生活服务",
+            "酒店/民宿"
+          ]
+        }
+      ]
+    },
+    "H0097": {
+      "sourceName": "旅游",
+      "sourceParentCode": "H12",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0098": {
+      "sourceName": "室内娱乐",
+      "sourceParentCode": "H12",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0099": {
+      "sourceName": "家政服务",
+      "sourceParentCode": "H12",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 1500001000,
+          "label": "家政服务",
+          "path": [
+            "生活服务",
+            "家政服务"
+          ]
+        }
+      ]
+    },
+    "H0100": {
+      "sourceName": "养老服务",
+      "sourceParentCode": "H12",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0101": {
+      "sourceName": "美容/美发/保健",
+      "sourceParentCode": "H12",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0102": {
+      "sourceName": "婚嫁/摄影",
+      "sourceParentCode": "H12",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0103": {
+      "sourceName": "宠物服务",
+      "sourceParentCode": "H12",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 1500000900,
+          "label": "宠物服务",
+          "path": [
+            "生活服务",
+            "宠物服务"
+          ]
+        }
+      ]
+    },
+    "H0104": {
+      "sourceName": "其他生活服务",
+      "sourceParentCode": "H12",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0105": {
+      "sourceName": "民航/铁路/公路/水路客运",
+      "sourceParentCode": "H13",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0106": {
+      "sourceName": "货运/物流/仓储",
+      "sourceParentCode": "H13",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1000020000,
+          "label": "货运/物流/仓储",
+          "path": [
+            "交通运输/仓储/物流",
+            "货运/物流/仓储"
+          ]
+        }
+      ]
+    },
+    "H0107": {
+      "sourceName": "邮政/快递",
+      "sourceParentCode": "H13",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 1000040000,
+          "label": "邮政/快递",
+          "path": [
+            "交通运输/仓储/物流",
+            "邮政/快递"
+          ]
+        }
+      ]
+    },
+    "H0108": {
+      "sourceName": "贸易/进出口",
+      "sourceParentCode": "H13",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 700000000,
+          "label": "批发/零售/贸易",
+          "path": [
+            "批发/零售/贸易"
+          ]
+        }
+      ]
+    },
+    "H0109": {
+      "sourceName": "批发/零售",
+      "sourceParentCode": "H13",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0110": {
+      "sourceName": "矿产开采",
+      "sourceParentCode": "H14",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0111": {
+      "sourceName": "金属冶炼",
+      "sourceParentCode": "H14",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0112": {
+      "sourceName": "煤炭/燃料加工",
+      "sourceParentCode": "H14",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0113": {
+      "sourceName": "电力/热力/燃气/水务",
+      "sourceParentCode": "H14",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0114": {
+      "sourceName": "新能源",
+      "sourceParentCode": "H14",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1100050000,
+          "label": "新能源",
+          "path": [
+            "能源/环保/矿产",
+            "新能源"
+          ]
+        }
+      ]
+    },
+    "H0115": {
+      "sourceName": "石化",
+      "sourceParentCode": "H14",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0116": {
+      "sourceName": "化工",
+      "sourceParentCode": "H14",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 1100060000,
+          "label": "化工",
+          "path": [
+            "能源/环保/矿产",
+            "化工"
+          ]
+        }
+      ]
+    },
+    "H0117": {
+      "sourceName": "环保",
+      "sourceParentCode": "H14",
+      "status": "exact_unique",
+      "targets": [
+        {
+          "value": 1100020000,
+          "label": "环保",
+          "path": [
+            "能源/环保/矿产",
+            "环保"
+          ]
+        }
+      ]
+    },
+    "H0118": {
+      "sourceName": "政府/公共事业",
+      "sourceParentCode": "H15",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1400000000,
+          "label": "政府/非盈利机构",
+          "path": [
+            "政府/非盈利机构"
+          ]
+        }
+      ]
+    },
+    "H0119": {
+      "sourceName": "非营利组织",
+      "sourceParentCode": "H15",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 1400000000,
+          "label": "政府/非盈利机构",
+          "path": [
+            "政府/非盈利机构"
+          ]
+        }
+      ]
+    },
+    "H0120": {
+      "sourceName": "农/林/牧/渔",
+      "sourceParentCode": "H15",
+      "status": "manual_override",
+      "targets": [
+        {
+          "value": 600000000,
+          "label": "农/林/牧/渔",
+          "path": [
+            "农/林/牧/渔"
+          ]
+        }
+      ]
+    },
+    "H0121": {
+      "sourceName": "其他行业",
+      "sourceParentCode": "H15",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0122": {
+      "sourceName": "自动驾驶",
+      "sourceParentCode": "H07",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0123": {
+      "sourceName": "自动驾驶",
+      "sourceParentCode": "H01",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0124": {
+      "sourceName": "具身智能与机器人",
+      "sourceParentCode": "H01",
+      "status": "unmapped",
+      "targets": []
+    },
+    "H0125": {
+      "sourceName": "低空经济",
+      "sourceParentCode": "H08",
+      "status": "unmapped",
+      "targets": []
+    }
+  }
+}

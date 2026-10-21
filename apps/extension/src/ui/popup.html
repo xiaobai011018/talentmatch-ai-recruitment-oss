@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Extension</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="../../assets/libs/html2pdf.bundle.min.js"></script>
+  <script src="../core/quoraApiGuard.js"></script>
+  <script src="../utils/highestEducation.js"></script>
+
+  <script src="../core/popup.js"></script>
+  <script src="../core/D.js"></script>
+  <!-- <script src="test.js"></script> -->
+  <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+  <!-- <script src="HH.js"></script> -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log(typeof XLSX); // Should print "object" if loaded correctly
+    });
+  </script>
+</head>
+
+<body>
+  <div id="AnalyzeBlock">
+    <h1>匹配度查询器V3.2.25</h1>
+
+    <div class="refreshButtonContainer">
+      <button id="refreshCurrentData">更新此岗位信息</button>
+    </div>
+
+    <div id="MaiMaiSave/UploadDiv">
+      <button id="MaiMaiMappingButton">匹配上传</button>
+      <button id="MaiMaiUnviewedMappingButton">未查看匹配上传</button>
+      <button id="MaiMaiSaveSession">保存策略</button>
+    </div>
+
+
+
+    <div id="PositionSessionContainer">
+      <button id="openPositionSessionLiepin" style="display: none;">随机筛选</button>
+      <button id="openPositionSessionLinkedIn" style="display: none;">随机筛选</button>
+      <div id="LiepinOpenAllBatch" style="display: none;">
+        <button id="LiepinOpenAllBatchButton">打开批量页面</button>
+      </div>
+
+
+      <!-- <span>
+        <button id="openGetPositionSessionLiepin" style="display: none;">筛选条件</button>  
+      </span> -->
+    </div>
+
+    <div id="LiepinBatchFirstFilteringDiv" style="display: none;">
+      <button id="LiepinBatchFirstFiltering">初筛后批量查看</button>
+    </div>
+
+
+    <button id="LinkedInMappingButtonHuarenOnlyUpload" style="display:none">华人匹配上传</button>
+    <button id="LinkedInMappingButtonUnviewedUpload" style="display:none">未查看匹配上传</button>
+
+    <div id="currentPosition">当前岗位: <span id="positionPlaceholder"></span></div>
+
+    <!-- 可搜索的猎头下拉框 -->
+    <div class="searchable-dropdown-container">
+      <input type="text" id="headhuntersSearch" placeholder="搜索猎头..." class="searchable-dropdown-input-headhunters"
+        style="display: none;">
+      <select id="headhuntersDropdown" title="选择猎头" aria-label="选择猎头"
+        class="searchable-dropdown-select-headhunters"></select>
+      <input type="text" id="positionsSearch" placeholder="搜索岗位..." class="searchable-dropdown-input-positions"
+        style="display: none;">
+      <select id="positionsDropdown" title="选择岗位" aria-label="选择岗位"
+        class="searchable-dropdown-select-positions"></select>
+    </div>
+    <select id="strategyDropdown" title="选择策略" aria-label="选择策略">
+      <option>null</option>
+    </select>
+
+    <br>
+    <button id="fetchResume">分析简历</button>
+
+    <!-- 猎聘更新网页所以更新过的按键都加了Alternative -->
+    <div id="LiepinBatchSaveResumeBlockMainAlternative" style="display: none;">
+      <hr>
+      <div class="button-group-horizontal">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <h3>[所有人]匹配上传</h3>
+          <button id="LiepinBatchSaveResumeAlternative">开始保存</button>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <h3>猎聘批量保存简历</h3>
+          <button id="LiepinBatchSaveResumeOldAlternative">开始保存</button>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+
+
+    <button id="openTab">?</button>
+    <hr>
+    <div id="popup-content"></div>
+  </div>
+
+
+
+  <div id="Boss_Detail" style="display:none">
+    <h3>保存Boss Detail</h3>
+    <button id="Boss_Detail">保存</button>
+  </div>
+
+  <div id="BossSaveBlock">
+    <h3>保存Boss Detail</h3>
+    <button id="BossSaveJD">保存岗位到本地</button>
+    <button id="BossSaveJD_Company">保存公司所有岗位到本地</button>
+    <button id="BossSaveJD_Overseas">保存海外岗位到本地</button>
+  </div>
+
+  <div id="Linkedin_Detail_Div" style="display:none">
+    <h3>企业信息收集</h3>
+    <button id="Linkedin_Detail">保存</button>
+  </div>
+
+  <div id="Liepin_Detail_div" style="display:none">
+    <h3>保存Liepin Detail</h3>
+    <button id="Liepin_Detail">保存</button>
+  </div>
+
+  <div id="LiepinCompanyJobsExportDiv" style="display:none">
+    <h3>猎聘岗位提取</h3>
+    <button id="LiepinCompanyJobsExport">导出公司岗位表</button>
+    <button id="LiepinCompanyJobsExportTest">测试导出前30条</button>
+    <div id="LiepinCompanyJobsExportStatus" style="margin-top:8px;font-size:12px;color:white;line-height:1.5;"></div>
+  </div>
+
+  <div id="ZhiLianSave/UploadDiv" style="display: none;">
+    <button id="ZhiLianMappingButton">匹配上传</button>
+    <button id="ZhiLianSaveSession">保存策略</button>
+  </div>
+
+  <button id="toggleButton" style="margin-top: 20px;">展开更多功能</button>
+  <div id="collapsibleContent">
+    <div id="LinkedInMappingAll" style="display: none;">
+      <hr>
+
+      <div id="LinkedinReplyFilterDiv">
+        <h3>初筛和回复</h3>
+        <button id="LinkedinReplyFilter">开始初筛</button>
+      </div>
+
+      <hr>
+      <h3>[所有人]Mapping</h3>
+      <button id="LinkedInMappingButtonAll">开始保存</button>
+      <h3>[所有人]匹配上传</h3>
+      <button id="LinkedInMappingButtonUploadAnyjob">开始保存</button>
+      <h3>[跳过Viewed-所有人]Mapping</h3>
+      <button id="LinkedInMappingButtonAllSkipViewed">开始保存</button>
+      <h3>总结近期动态</h3>
+      <button id="LinkedInActivitySummaryButton">总结近期动态</button>
+    </div>
+
+    <div id="LinkedInMapping" style="display: none;">
+      <hr>
+      <h3>[华人]Mapping</h3>
+      <button id="LinkedInMappingButton">开始保存</button>
+    </div>
+
+    <div id="LinkedInMapping_talent_hire" style="display: none;">
+      <h3>Pipeline Mapping</h3>
+      <button id="LinkedInMappingButton_talent_hire">开始保存</button>
+
+      <h3>Pipeline 匹配上传（跳过已查看）</h3>
+      <button id="LinkedInMappingButton_talent_hire_skipViewed">开始去重保存</button>
+
+      <h3>Pipeline 匹配上传</h3>
+      <button id="LinkedInMappingButton_talent_hire_AnyJobUpload">开始保存</button>
+    </div>
+
+    <div id="LiepinBatchCompanyFilteringDiv">
+      <h3>导入资料</h3>
+      <button id="LiepinBatchCompanyFiltering">对标公司打开</button>
+      <h3>BD上传</h3>
+      <button id="LiepinUploadBD">开始当前页面BD上传</button>
+    </div>
+
+
+    <div id="MaiMaiUploadBDDiv">
+      <h3>BD上传</h3>
+      <button id="MaiMaiUploadBD">开始当前页面BD上传</button>
+      <button id="MaiMaiImportCompany">指定公司上传</button>
+    </div>
+
+    <div id="MaiMaiReplyFilterDiv">
+      <h3>初筛和回复</h3>
+      <button id="MaiMaiReplyFilter">脉脉BD发起</button>
+      <button id="MaiMaiInvestorBD">脉脉投资人BD</button>
+    </div>
+
+    <div id="CookieBlock">
+      <hr>
+      <h3>Cookie保存 / 读取</h3>
+      <button id="exportCookies">导出 Cookies</button>
+      <button id="importCookies">导入 Cookies</button>
+      <button id="onlineCookies">网络 Cookies</button>
+      <input type="file" id="fileInput" style="display:none;" />
+    </div>
+
+    <div id="SessionBlock">
+      <hr>
+      <h3>Session保存 / 读取</h3>
+      <input type="file" id="jsonFile" accept=".json" style="display: none;" />
+      <button id="uploadBtn">打开筛选条件(Session)</button>
+      <button id="save-filter-session">保存筛选条件Session</button>
+    </div>
+
+    <div id="LiepinFirstFilteringBlock">
+      <hr>
+      <h3>猎聘初筛匹配上传</h3>
+      <button id="LiepinFirstFilteringUpload">开始初筛</button>
+    </div>
+
+    <div id="LinkedInFirstFilteringBlock">
+      <hr>
+      <h3>领英【所有人】初筛匹配上传</h3>
+      <button id="LinkedInFirstFilteringUpload">开始初筛</button>
+      <h3>领英【华人】初筛匹配上传</h3>
+      <button id="LinkedInFirstFilteringUploadHuaren">开始初筛</button>
+    </div>
+
+    <div id="MaiMaiFirstFilteringBlock">
+      <hr>
+      <h3>脉脉初筛匹配上传</h3>
+      <button id="MaiMaiFirstFilteringUpload">开始初筛</button>
+    </div>
+
+    <div id="SessionBlockLinkedIn">
+      <hr>
+      <h3>领英Session保存 / 读取</h3>
+      <input type="file" id="jsonFileLinkedIn" accept=".json" style="display: none;" />
+      <button id="uploadBtnLinkedIn">打开筛选条件(Session)</button>
+      <button id="save-filter-session-LinkedIn">保存筛选条件(Session)到本地</button>
+    </div>
+
+    <div id="LiepinBatchSaveResumeBlock" style="display: block;">
+      <hr>
+      <!-- <h3>猎聘批量保存简历</h3>
+      <button id="LiepinBatchSaveResume">开始保存</button> -->
+      <!-- <h3>批量简历转换为可开聊模板</h3>
+      <button id="JumpToIsChatConvert">跳转</butto> -->
+    </div>
+
+    <div id="LiepinMappingBlock" style="display: block;">
+      <hr>
+      <h3>初筛Mapping</h3>
+      <button id="start">开始当前页面Mapping</button>
+    </div>
+
+    <div id="ResumeBlock">
+      <hr>
+      <h3>保存简历</h3>
+      <button id="LiepinSaveResume">保存单个猎聘简历到本地</button>
+    </div>
+
+
+
+    <div id="CustomJobDescribe" style="display: none;">
+      <hr>
+      <h3>自定义岗位</h3>
+      <!-- 自定义岗位 Dropdown -->
+      <!-- 弹出表单容器 -->
+      <div id="customFormContainer"></div>
+      <select id="customDropdown">
+        <option selected value="none">不使用自定义岗位信息</option>
+        <option value="add">增加一个自定义岗位</option>
+        <option id="editJobRequirement">修改岗位要求</option>
+      </select>
+    </div>
+  </div>
+
+
+
+  <div style="opacity: 0.1;">Powered by Eason & Zac</div>
+  <button id="clickButton" style="display: none;">Click Show More Buttons</button>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+{
+  "import_date": "2026-08-31",
+  "source": "User-provided ZIP snapshots; upstream Git history not supplied",
+  "archives": [
+    {
+      "archive": "TalentMatch-Extension-New-main.zip",
+      "sha256": "13956aa781276de06e70e7b4c0fcbe244b6e8b74c7115a3ba9d159438ea13772",
+      "target": "apps/extension"
+    },
+    {
+      "archive": "MaimaiHelper-dev (4).zip",
+      "sha256": "703dccb65a0bc041f979361fe368f9498dff5780d11a3f954fce72578ede6e89",
+      "target": "apps/maimai"
+    },
+    {
+      "archive": "ZhiLianAuto-dev.zip",
+      "sha256": "53519094d8c8a55eef896787ed60ae5186e49123e7a22c3ec60f1a60e0d19544",
+      "target": "apps/zhilian"
+    },
+    {
+      "archive": "liepin-helper-api-dev.zip",
+      "sha256": "7d31494972a17f22bc198a6a3e274859ed5b6cc2f82a0d4118e7873cd779c2ce",
+      "target": "apps/liepin"
+    }
+  ],
+  "excluded_files": [
+    "apps/extension/assets/images/intro/tu.jpg",
+    "apps/extension/assets/images/intro/tu3.png",
+    "apps/extension/assets/images/intro/tu4.png",
+    "apps/extension/assets/images/intro/tu5.png",
+    "apps/extension/assets/images/intro/tu6.png",
+    "apps/extension/assets/images/intro/tu7.png",
+    "apps/extension/assets/images/intro/tu9.png",
+    "apps/extension/assets/images/run-image/Run.png",
+    "apps/extension/logs/.gitkeep",
+    "apps/extension/logs/liepin-batch-last-run.json",
+    "apps/extension/src/.DS_Store",
+    "apps/extension/src/utils/content.js.bak",
+    "apps/zhilian/.env"
+  ],
+  "sanitization_changes": [
+    {
+      "file": "apps/zhilian/backend/manger.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/zhilian/backend/core/entity/zhilian_search_condition.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/zhilian/backend/core/entity/searchCondition.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/zhilian/backend/core/entity/candidate.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/zhilian/backend/core/api/zhilian_api.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/zhilian/backend/core/api/chatBotApi.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/zhilian/backend/core/api/anyJobApi.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/zhilian/backend/core/utils/regex/regex_utils.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/liepin/backend/manger.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/liepin/backend/entity/searchCondition.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/liepin/backend/entity/feichu_spider.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/liepin/backend/entity/candidate.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/liepin/backend/api/lp.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/liepin/backend/api/chatBotApi.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/liepin/backend/api/anyJobApi.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/liepin/backend/utils/msg/history_msg.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/liepin/backend/utils/regex/regex_utils.py",
+      "reason": "Remove manual demo with personal sample data, local paths, or live API calls"
+    },
+    {
+      "file": "apps/liepin/.env.example",
+      "reason": "Remove machine-specific browser profile path; retain empty safe default"
+    },
+    {
+      "file": "apps/liepin/backend/entity/feichu_spider.py",
+      "reason": "Replace default contact email with reserved example.com address"
+    },
+    {
+      "file": "apps/zhilian/scripts/test_history_msg_contact_cards.py",
+      "reason": "Replace historical phone literal with synthetic test value"
+    },
+    {
+      "file": "apps/extension/src/ui/intro.html",
+      "reason": "Remove references to excluded business screenshots"
+    },
+    {
+      "file": "apps/*/.gitignore",
+      "reason": "Replace broad legacy source exclusions with shared root rules; include required JSON dictionaries, dependency manifests, docs and tests"
+    }
+  ],
+  "copied_file_count_before_new_docs": 280,
+  "original_authorship": "Original author comments and third-party file headers retained; no new open-source license asserted"
+}

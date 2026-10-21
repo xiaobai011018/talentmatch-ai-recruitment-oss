@@ -1,0 +1,2212 @@
+/* TalentMatch 2.0 - 现代化样式 */
+
+/* 全局样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Chrome扩展窗口大小控制 */
+html {
+  min-width: 400px;
+  width: 400px;
+}
+
+/* 基础样式 */
+body {
+  min-width: 400px;
+  width: 400px;
+  min-height: auto;
+  max-height: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #2d3748;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* 主容器 */
+#AnalyzeBlock {
+  width: 100%;
+  max-width: 380px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  margin: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 标题样式 */
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+/* 白色标题样式 */
+h1.white-title {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 12px 0 8px 0;
+  color: #4a5568;
+  text-align: center;
+}
+
+/* 现代化按钮样式 */
+button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.0em;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: visible;
+  min-width: 120px;
+  max-width: none;
+  letter-spacing: 0.3px;
+  white-space: normal;
+  text-overflow: clip;
+  align-self: center;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+button:hover::before {
+  left: 100%;
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+/* 特殊按钮样式 */
+#openTab {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  font-size: 14px;
+  font-weight: bold;
+  min-width: auto;
+}
+
+#fetchResume {
+  background: linear-gradient(135deg, #4ecdc4, #44a08d);
+  font-size: 1.1em;
+  padding: 14px 28px;
+  margin: 15px 0;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+/* 下拉选择框样式 */
+select {
+  width: 100%;
+  max-width: 340px;
+  padding: 14px 18px;
+  margin: 8px 0;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  background: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4a5568;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+select:hover {
+  border-color: #cbd5e0;
+}
+
+/* 复选框样式 */
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #cbd5e0;
+  border-radius: 4px;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-color: #667eea;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* 标签样式 */
+label {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 1.0em;
+  color: #4a5568;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+label:hover {
+  color: #667eea;
+}
+
+
+
+/* 复制按钮 */
+#Copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  padding: 6px 12px;
+  font-size: 0.8em;
+  border-radius: 8px;
+  min-width: auto;
+  margin: 0;
+}
+
+/* 结果文本 */
+#resultText {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #4a5568;
+  font-size: 0.9em;
+}
+
+/* 当前岗位信息 */
+#currentPosition {
+  background: linear-gradient(135deg, #f7fafc, #edf2f7);
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin: 12px 0;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  font-size: 1.2em;
+  color: #4a5568;
+  width: 100%;
+  max-width: 340px;
+}
+
+#positionPlaceholder {
+  font-weight: 600;
+  color: #667eea;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* 分隔线 */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+  margin: 15px 0;
+}
+
+/* 标题和按钮对齐样式 */
+h3 + button {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+/* 确保所有功能块内的元素居中对齐 */
+div[id*="Block"] h3,
+div[id*="Div"] h3 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+div[id*="Block"] button,
+div[id*="Div"] button {
+  align-self: center;
+  margin: 4px auto;
+}
+
+/* 位置会话容器样式 */
+#PositionSessionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 8px auto;
+  max-width: none;
+}
+
+/* PositionSessionContainer中的按钮样式 - 移除margin */
+#PositionSessionContainer button {
+  margin: 3px;
+}
+
+/* 功能块容器 */
+div[id*="Block"], div[id*="Div"] {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 8px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* 特殊容器例外 - 移除背景和padding */
+#LiepinBatchFirstFilteringDiv,
+#PositionSessionContainer,
+.button-group-horizontal,
+.horizontal-container {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 8px 0;
+  backdrop-filter: none;
+  width: auto;
+  max-width: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* LiepinBatchSaveResumeBlockMainAlternative中的按钮水平排列 */
+#LiepinBatchSaveResumeBlockMainAlternative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#LiepinBatchSaveResumeBlockMainAlternative h3 {
+  margin: 8px 0 4px 0;
+}
+
+#LiepinBatchSaveResumeBlockMainAlternative button {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+  flex: 0 1 auto;
+  min-width: 120px;
+  isolation: isolate;
+  contain: layout;
+}
+
+/* 确保LiepinBatchSaveResumeBlockMainAlternative中的button-group-horizontal正常工作 */
+#LiepinBatchSaveResumeBlockMainAlternative .button-group-horizontal {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#LiepinBatchSaveResumeBlockMainAlternative .button-group-horizontal > * {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  isolation: isolate;
+}
+
+/* 刷新按钮容器 */
+.refreshButtonContainer {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 8px 0;
+  width: auto;
+  max-width: none;
+  align-items: center;
+}
+
+/* 水平布局容器 */
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin: 12px 0;
+}
+
+/* 按钮组水平布局 */
+.button-group-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 8px auto;
+  max-width: none;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* button-group-horizontal中的按钮样式 */
+.button-group-horizontal button {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+  flex: 0 1 auto;
+  min-width: 120px;
+  isolation: isolate;
+  contain: layout;
+}
+
+/* 确保按钮在包装器内正确显示 */
+.button-group-horizontal > * {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  isolation: isolate;
+}
+
+/* 修复按钮点击区域问题 */
+.button-group-horizontal .refreshButtonContainer,
+.button-group-horizontal #LiepinBatchFirstFilteringDiv {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  display: flex !important;
+  flex: 0 1 auto;
+  isolation: isolate;
+  contain: layout;
+}
+
+.button-group-horizontal .refreshButtonContainer button,
+.button-group-horizontal #LiepinBatchFirstFilteringDiv button {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: pointer;
+  isolation: isolate;
+  contain: layout;
+}
+
+/* 通用按钮包装器修复 */
+.button-group-horizontal * {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  isolation: isolate;
+}
+
+.button-group-horizontal button {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  isolation: isolate;
+  contain: layout;
+}
+
+/* 确保按钮在包装器内正确显示和点击 */
+#buttonGroupWrapper,
+#linkedInButtonWrapper,
+#PositionSessionContainer {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  isolation: isolate;
+  contain: layout;
+}
+
+#buttonGroupWrapper *,
+#linkedInButtonWrapper *,
+#PositionSessionContainer * {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  isolation: isolate;
+}
+
+#buttonGroupWrapper button,
+#linkedInButtonWrapper button,
+#PositionSessionContainer button {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: pointer;
+  isolation: isolate;
+  contain: layout;
+  /* 确保继承通用按钮样式 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  font-size: 1.0em;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  min-width: 120px;
+  max-width: none;
+  letter-spacing: 0.3px;
+  white-space: normal;
+  text-overflow: clip;
+  align-self: center;
+}
+
+#buttonGroupWrapper button:hover,
+#linkedInButtonWrapper button:hover,
+#PositionSessionContainer button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+#buttonGroupWrapper button:active,
+#linkedInButtonWrapper button:active,
+#PositionSessionContainer button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+#buttonGroupWrapper button:focus,
+#linkedInButtonWrapper button:focus,
+#PositionSessionContainer button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+/* 防止按钮事件冒泡和重叠 */
+.button-group-horizontal button:before,
+.button-group-horizontal button:after {
+  content: none;
+  pointer-events: none;
+}
+
+/* 确保按钮有明确的边界 */
+.button-group-horizontal button {
+  box-sizing: border-box;
+  overflow: visible;
+  touch-action: manipulation;
+}
+
+/* 修复按钮悬停和点击区域 */
+.button-group-horizontal button:hover {
+  z-index: 4;
+}
+
+.button-group-horizontal button:active {
+  z-index: 5;
+}
+
+.button-group-horizontal button:focus {
+  z-index: 4;
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* 确保按钮之间有明确的边界和间距 */
+.button-group-horizontal > * {
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 1 auto !important;
+  min-width: 120px !important;
+  max-width: none !important;
+}
+
+/* 防止按钮内容溢出 */
+.button-group-horizontal button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 确保按钮容器不会影响按钮点击 */
+.button-group-horizontal .refreshButtonContainer,
+.button-group-horizontal #LiepinBatchFirstFilteringDiv {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 修复按钮的伪元素 */
+.button-group-horizontal button::before,
+.button-group-horizontal button::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* PositionSessionContainer专用样式 */
+#PositionSessionContainer {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  width: 100% !important;
+  flex-wrap: wrap !important;
+  margin: 8px auto !important;
+  position: relative !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  isolation: isolate !important;
+  contain: layout !important;
+}
+
+#PositionSessionContainer > * {
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 1 auto !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  position: relative !important;
+  z-index: 2 !important;
+  pointer-events: auto !important;
+  isolation: isolate !important;
+}
+
+#PositionSessionContainer button {
+  position: relative !important;
+  z-index: 3 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  isolation: isolate !important;
+  contain: layout !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  touch-action: manipulation !important;
+}
+
+#PositionSessionContainer button:hover {
+  z-index: 4 !important;
+}
+
+#PositionSessionContainer button:active {
+  z-index: 5 !important;
+}
+
+#PositionSessionContainer button:focus {
+  z-index: 4 !important;
+  outline: 2px solid #667eea !important;
+  outline-offset: 2px !important;
+}
+
+#PositionSessionContainer button::before,
+#PositionSessionContainer button::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* Position Session按钮统一样式 */
+#openPositionSessionLiepin,
+#openPositionSessionLinkedIn,
+#LiepinOpenAllBatchButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 12px 20px !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  min-width: 120px !important;
+  margin: 0 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#openPositionSessionLiepin:hover,
+#openPositionSessionLinkedIn:hover,
+#LiepinOpenAllBatchButton:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4) !important;
+}
+
+#openPositionSessionLiepin:active,
+#openPositionSessionLinkedIn:active,
+#LiepinOpenAllBatchButton:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3) !important;
+}
+
+#openPositionSessionLiepin:focus,
+#openPositionSessionLinkedIn:focus,
+#LiepinOpenAllBatchButton:focus {
+  outline: 2px solid #667eea !important;
+  outline-offset: 2px !important;
+}
+
+/* CookieBlock按钮修复 */
+#CookieBlock {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  isolation: isolate;
+  contain: layout;
+}
+
+#CookieBlock > * {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  isolation: isolate;
+}
+
+#CookieBlock button {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: pointer;
+  isolation: isolate;
+  contain: layout;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  overflow: visible;
+  touch-action: manipulation;
+  /* 确保继承通用按钮样式 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  font-size: 1.0em;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  min-width: 120px;
+  max-width: none;
+  letter-spacing: 0.3px;
+  white-space: normal;
+  text-overflow: clip;
+  align-self: center;
+}
+
+#CookieBlock button:hover {
+  z-index: 4;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+#CookieBlock button:active {
+  z-index: 5;
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+#CookieBlock button:focus {
+  z-index: 4;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+#CookieBlock button::before,
+#CookieBlock button::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* 确保CookieBlock按钮之间有明确的边界和间距 */
+#CookieBlock {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin: 8px auto !important;
+  position: relative !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  isolation: isolate !important;
+  contain: layout !important;
+}
+
+/* LinkedIn按钮统一样式 */
+#LinkedInMappingButtonHuarenOnlyUpload,
+#LinkedInMappingButtonUnviewedUpload {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  position: relative !important;
+  overflow: visible !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#LinkedInMappingButtonHuarenOnlyUpload:hover,
+#LinkedInMappingButtonUnviewedUpload:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#LinkedInMappingButtonHuarenOnlyUpload:active,
+#LinkedInMappingButtonUnviewedUpload:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#LinkedInMappingButtonHuarenOnlyUpload:focus,
+#LinkedInMappingButtonUnviewedUpload:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#LinkedInMappingButtonHuarenOnlyUpload::before,
+#LinkedInMappingButtonUnviewedUpload::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+#LinkedInMappingButtonHuarenOnlyUpload:hover::before,
+#LinkedInMappingButtonUnviewedUpload:hover::before {
+  left: 100%;
+}
+
+/* Cookie相关按钮统一样式 */
+#exportCookies,
+#importCookies,
+#onlineCookies {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  position: relative !important;
+  overflow: visible !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#exportCookies:hover,
+#importCookies:hover,
+#onlineCookies:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#exportCookies:active,
+#importCookies:active,
+#onlineCookies:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#exportCookies:focus,
+#importCookies:focus,
+#onlineCookies:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#exportCookies::before,
+#importCookies::before,
+#onlineCookies::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+#exportCookies:hover::before,
+#importCookies:hover::before,
+#onlineCookies:hover::before {
+  left: 100%;
+}
+
+/* Session相关按钮统一样式 */
+#uploadBtn,
+#save-filter-session,
+#uploadBtnLinkedIn,
+#save-filter-session-LinkedIn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  position: relative !important;
+  overflow: visible !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#uploadBtn:hover,
+#save-filter-session:hover,
+#uploadBtnLinkedIn:hover,
+#save-filter-session-LinkedIn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#uploadBtn:active,
+#save-filter-session:active,
+#uploadBtnLinkedIn:active,
+#save-filter-session-LinkedIn:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#uploadBtn:focus,
+#save-filter-session:focus,
+#uploadBtnLinkedIn:focus,
+#save-filter-session-LinkedIn:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#uploadBtn::before,
+#save-filter-session::before,
+#uploadBtnLinkedIn::before,
+#save-filter-session-LinkedIn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+#uploadBtn:hover::before,
+#save-filter-session:hover::before,
+#uploadBtnLinkedIn:hover::before,
+#save-filter-session-LinkedIn:hover::before {
+  left: 100%;
+}
+
+/* toggleButton统一样式 */
+#toggleButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  position: relative !important;
+  overflow: visible !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#toggleButton:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#toggleButton:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#toggleButton:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#toggleButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+#toggleButton:hover::before {
+  left: 100%;
+}
+
+/* MaiMaiUploadBDDiv和MaiMaiReplyFilterDiv按钮修复 */
+#MaiMaiUploadBDDiv,
+#MaiMaiReplyFilterDiv {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  isolation: isolate;
+  contain: layout;
+}
+
+#MaiMaiUploadBDDiv > *,
+#MaiMaiReplyFilterDiv > * {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  isolation: isolate;
+}
+
+#MaiMaiUploadBDDiv button,
+#MaiMaiReplyFilterDiv button {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: pointer;
+  isolation: isolate;
+  contain: layout;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  overflow: visible;
+  touch-action: manipulation;
+  /* 确保继承通用按钮样式 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  font-size: 1.0em;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  min-width: 120px;
+  max-width: none;
+  letter-spacing: 0.3px;
+  white-space: normal;
+  text-overflow: clip;
+  align-self: center;
+}
+
+#MaiMaiUploadBDDiv button:hover,
+#MaiMaiReplyFilterDiv button:hover {
+  z-index: 4;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+#MaiMaiUploadBDDiv button:active,
+#MaiMaiReplyFilterDiv button:active {
+  z-index: 5;
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+#MaiMaiUploadBDDiv button:focus,
+#MaiMaiReplyFilterDiv button:focus {
+  z-index: 4;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+#MaiMaiUploadBDDiv button::before,
+#MaiMaiReplyFilterDiv button::before,
+#MaiMaiUploadBDDiv button::after,
+#MaiMaiReplyFilterDiv button::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* 确保MaiMaiUploadBDDiv和MaiMaiReplyFilterDiv按钮之间有明确的边界和间距 */
+#MaiMaiUploadBDDiv,
+#MaiMaiReplyFilterDiv {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin: 8px auto !important;
+  position: relative !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  isolation: isolate !important;
+  contain: layout !important;
+}
+
+#MaiMaiUploadBDDiv > *,
+#MaiMaiReplyFilterDiv > * {
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 1 auto !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  position: relative !important;
+  z-index: 2 !important;
+  pointer-events: auto !important;
+  isolation: isolate !important;
+}
+
+#MaiMaiUploadBDDiv button,
+#MaiMaiReplyFilterDiv button {
+  position: relative !important;
+  z-index: 3 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  isolation: isolate !important;
+  contain: layout !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  touch-action: manipulation !important;
+  /* 确保继承通用按钮样式 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#MaiMaiUploadBDDiv button:hover,
+#MaiMaiReplyFilterDiv button:hover {
+  z-index: 4 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#MaiMaiUploadBDDiv button:active,
+#MaiMaiReplyFilterDiv button:active {
+  z-index: 5 !important;
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiUploadBDDiv button:focus,
+#MaiMaiReplyFilterDiv button:focus {
+  z-index: 4 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiUploadBDDiv button::before,
+#MaiMaiReplyFilterDiv button::before,
+#MaiMaiUploadBDDiv button::after,
+#MaiMaiReplyFilterDiv button::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* MaiMai按钮统一样式 */
+#MaiMaiUploadBD,
+#MaiMaiImportCompany,
+#MaiMaiReplyFilter,
+#MaiMaiInvestorBD,
+#MaiMaiReplyFilterNoFriend {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  position: relative !important;
+  overflow: visible !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#MaiMaiUploadBD:hover,
+#MaiMaiImportCompany:hover,
+#MaiMaiReplyFilter:hover,
+#MaiMaiInvestorBD:hover,
+#MaiMaiReplyFilterNoFriend:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#MaiMaiUploadBD:active,
+#MaiMaiImportCompany:active,
+#MaiMaiReplyFilter:active,
+#MaiMaiInvestorBD:active,
+#MaiMaiReplyFilterNoFriend:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiUploadBD:focus,
+#MaiMaiImportCompany:focus,
+#MaiMaiReplyFilter:focus,
+#MaiMaiInvestorBD:focus,
+#MaiMaiReplyFilterNoFriend:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiUploadBD::before,
+#MaiMaiImportCompany::before,
+#MaiMaiReplyFilter::before,
+#MaiMaiInvestorBD::before,
+#MaiMaiReplyFilterNoFriend::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+#MaiMaiUploadBD:hover::before,
+#MaiMaiImportCompany:hover::before,
+#MaiMaiReplyFilter:hover::before,
+#MaiMaiInvestorBD:hover::before,
+#MaiMaiReplyFilterNoFriend:hover::before {
+  left: 100%;
+}
+
+/* MaiMaiFirstFilteringBlock按钮修复 */
+#MaiMaiFirstFilteringBlock {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  isolation: isolate;
+  contain: layout;
+}
+
+#MaiMaiFirstFilteringBlock > * {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  isolation: isolate;
+}
+
+#MaiMaiFirstFilteringBlock button {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: pointer;
+  isolation: isolate;
+  contain: layout;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  overflow: visible;
+  touch-action: manipulation;
+  /* 确保继承通用按钮样式 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  font-size: 1.0em;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  min-width: 120px;
+  max-width: none;
+  letter-spacing: 0.3px;
+  white-space: normal;
+  text-overflow: clip;
+  align-self: center;
+}
+
+#MaiMaiFirstFilteringBlock button:hover {
+  z-index: 4;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+#MaiMaiFirstFilteringBlock button:active {
+  z-index: 5;
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+#MaiMaiFirstFilteringBlock button:focus {
+  z-index: 4;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+#MaiMaiFirstFilteringBlock button::before,
+#MaiMaiFirstFilteringBlock button::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* 确保MaiMaiFirstFilteringBlock按钮之间有明确的边界和间距 */
+#MaiMaiFirstFilteringBlock {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin: 8px auto !important;
+  position: relative !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  isolation: isolate !important;
+  contain: layout !important;
+}
+
+#MaiMaiFirstFilteringBlock > * {
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 1 auto !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  position: relative !important;
+  z-index: 2 !important;
+  pointer-events: auto !important;
+  isolation: isolate !important;
+}
+
+#MaiMaiFirstFilteringBlock button {
+  position: relative !important;
+  z-index: 3 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  isolation: isolate !important;
+  contain: layout !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  touch-action: manipulation !important;
+  /* 确保继承通用按钮样式 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#MaiMaiFirstFilteringBlock button:hover {
+  z-index: 4 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#MaiMaiFirstFilteringBlock button:active {
+  z-index: 5 !important;
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiFirstFilteringBlock button:focus {
+  z-index: 4 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiFirstFilteringBlock button::before,
+#MaiMaiFirstFilteringBlock button::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* MaiMaiFirstFilteringUpload按钮统一样式 */
+#MaiMaiFirstFilteringUpload {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  position: relative !important;
+  overflow: visible !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#MaiMaiFirstFilteringUpload:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#MaiMaiFirstFilteringUpload:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiFirstFilteringUpload:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiFirstFilteringUpload::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+#MaiMaiFirstFilteringUpload:hover::before {
+  left: 100%;
+}
+
+/* MaiMaiSave/UploadDiv按钮修复 */
+#MaiMaiSave\/UploadDiv {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  isolation: isolate;
+  contain: layout;
+}
+
+#MaiMaiSave\/UploadDiv > * {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  isolation: isolate;
+}
+
+#MaiMaiSave\/UploadDiv button {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: pointer;
+  isolation: isolate;
+  contain: layout;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  overflow: visible;
+  touch-action: manipulation;
+  /* 确保继承通用按钮样式 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  font-size: 1.0em;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  min-width: 120px;
+  max-width: none;
+  letter-spacing: 0.3px;
+  white-space: normal;
+  text-overflow: clip;
+  align-self: center;
+}
+
+#MaiMaiSave\/UploadDiv button:hover {
+  z-index: 4;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+#MaiMaiSave\/UploadDiv button:active {
+  z-index: 5;
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+#MaiMaiSave\/UploadDiv button:focus {
+  z-index: 4;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+#MaiMaiSave\/UploadDiv button::before,
+#MaiMaiSave\/UploadDiv button::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* 确保MaiMaiSave/UploadDiv按钮之间有明确的边界和间距 */
+#MaiMaiSave\/UploadDiv {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin: 8px auto !important;
+  position: relative !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  isolation: isolate !important;
+  contain: layout !important;
+}
+
+#MaiMaiSave\/UploadDiv > * {
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 1 auto !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  position: relative !important;
+  z-index: 2 !important;
+  pointer-events: auto !important;
+  isolation: isolate !important;
+}
+
+#MaiMaiSave\/UploadDiv button {
+  position: relative !important;
+  z-index: 3 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  isolation: isolate !important;
+  contain: layout !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  touch-action: manipulation !important;
+  /* 确保继承通用按钮样式 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#MaiMaiSave\/UploadDiv button:hover {
+  z-index: 4 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#MaiMaiSave\/UploadDiv button:active {
+  z-index: 5 !important;
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiSave\/UploadDiv button:focus {
+  z-index: 4 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiSave\/UploadDiv button::before,
+#MaiMaiSave\/UploadDiv button::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* MaiMaiSave/UploadDiv按钮统一样式 */
+#MaiMaiMappingButton,
+#MaiMaiUnviewedMappingButton,
+#MaiMaiSaveSession {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  position: relative !important;
+  overflow: visible !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#MaiMaiMappingButton:hover,
+#MaiMaiUnviewedMappingButton:hover,
+#MaiMaiSaveSession:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#MaiMaiMappingButton:active,
+#MaiMaiUnviewedMappingButton:active,
+#MaiMaiSaveSession:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiMappingButton:focus,
+#MaiMaiUnviewedMappingButton:focus,
+#MaiMaiSaveSession:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#MaiMaiMappingButton::before,
+#MaiMaiUnviewedMappingButton::before,
+#MaiMaiSaveSession::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+#MaiMaiMappingButton:hover::before,
+#MaiMaiUnviewedMappingButton:hover::before,
+#MaiMaiSaveSession:hover::before {
+  left: 100%;
+}
+
+#CookieBlock > * {
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 1 auto !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  position: relative !important;
+  z-index: 2 !important;
+  pointer-events: auto !important;
+  isolation: isolate !important;
+}
+
+#CookieBlock button {
+  position: relative !important;
+  z-index: 3 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  isolation: isolate !important;
+  contain: layout !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  touch-action: manipulation !important;
+  /* 确保继承通用按钮样式 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#CookieBlock button:hover {
+  z-index: 4 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#CookieBlock button:active {
+  z-index: 5 !important;
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#CookieBlock button:focus {
+  z-index: 4 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#CookieBlock button::before,
+#CookieBlock button::after {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* 可折叠内容 */
+#collapsibleContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 10px 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#collapsibleContent.open {
+  max-height: none;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 响应式设计 */
+@media (max-width: 450px) {
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  #AnalyzeBlock {
+    margin: 5px;
+    padding: 15px;
+    max-width: 100% !important;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1.0em;
+    min-width: 130px;
+  }
+  
+  select, .refreshButtonContainer, div[id*="Block"], div[id*="Div"], #currentPosition {
+    max-width: 100% !important;
+  }
+}
+
+/* 加载状态 */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 成功/错误状态 */
+.success {
+  background: linear-gradient(135deg, #48bb78, #38a169) !important;
+}
+
+.error {
+  background: linear-gradient(135deg, #f56565, #e53e3e) !important;
+}
+
+/* 隐藏元素 */
+[style*="display: none"] {
+  display: none !important;
+}
+
+/* 可搜索下拉框样式 */
+.searchable-dropdown-container {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  margin: 4px 0;
+}
+
+.searchable-dropdown-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1.2em;
+  background: white;
+  color: #2d3748;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchable-dropdown-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.searchable-dropdown-input::placeholder {
+  color: #a0aec0;
+}
+
+.searchable-dropdown-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1.2em;
+  background: white;
+  color: #2d3748;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.searchable-dropdown-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.searchable-dropdown-select:hover {
+  border-color: #cbd5e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 猎头搜索输入框样式 */
+.searchable-dropdown-input-headhunters {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1.2em;
+  background: white;
+  color: #2d3748;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchable-dropdown-input-headhunters:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.searchable-dropdown-input-headhunters::placeholder {
+  color: #a0aec0;
+}
+
+/* 岗位搜索输入框样式 */
+.searchable-dropdown-input-positions {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1.2em;
+  background: white;
+  color: #2d3748;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchable-dropdown-input-positions:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.searchable-dropdown-input-positions::placeholder {
+  color: #a0aec0;
+}
+
+/* 猎头下拉框样式 */
+.searchable-dropdown-select-headhunters {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1.2em;
+  background: white;
+  color: #2d3748;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.searchable-dropdown-select-headhunters:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.searchable-dropdown-select-headhunters:hover {
+  border-color: #cbd5e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 岗位下拉框样式 */
+.searchable-dropdown-select-positions {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1.2em;
+  background: white;
+  color: #2d3748;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.searchable-dropdown-select-positions:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.searchable-dropdown-select-positions:hover {
+  border-color: #cbd5e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 搜索模式下的样式 */
+.searchable-dropdown-container.search-mode .searchable-dropdown-input {
+  display: block !important;
+}
+
+.searchable-dropdown-container.search-mode .searchable-dropdown-select {
+  display: none !important;
+}
+
+/* 猎头搜索模式下的样式 */
+.searchable-dropdown-container.search-mode-headhunters .searchable-dropdown-input-headhunters {
+  display: block !important;
+}
+
+.searchable-dropdown-container.search-mode-headhunters .searchable-dropdown-select-headhunters {
+  display: none !important;
+}
+
+/* 岗位搜索模式下的样式 */
+.searchable-dropdown-container.search-mode-positions .searchable-dropdown-input-positions {
+  display: block !important;
+}
+
+.searchable-dropdown-container.search-mode-positions .searchable-dropdown-select-positions {
+  display: none !important;
+}
+
+/* 下拉选项样式 */
+.searchable-dropdown-select option {
+  padding: 8px 12px;
+  font-size: 1.1em;
+}
+
+.searchable-dropdown-select option:hover {
+  background-color: #f7fafc;
+}
+
+/* 搜索提示 */
+.searchable-dropdown-container::after {
+  content: "点击下拉框开始搜索";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 0.8em;
+  color: #718096;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.searchable-dropdown-container:hover::after {
+  opacity: 1;
+}
+
+#refreshCurrentData {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  margin: 4px 2px !important;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  font-size: 1.0em !important;
+  font-weight: 500 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  position: relative !important;
+  overflow: visible !important;
+  min-width: 120px !important;
+  max-width: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  align-self: center !important;
+}
+
+#refreshCurrentData:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+#refreshCurrentData:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+#refreshCurrentData:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+#refreshCurrentData::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+#refreshCurrentData:hover::before {
+  left: 100%;
+}
+

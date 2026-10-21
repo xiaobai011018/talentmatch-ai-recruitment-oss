@@ -1,0 +1,1459 @@
+{
+    "data": [
+        {
+            "value": 100000000,
+            "label": "互联网/IT/电子/通信",
+            "extra": {
+                "shortPinyin": "hlw/it/dz/tx",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 100020000,
+                    "label": "电子商务",
+                    "extra": {
+                        "shortPinyin": "dzsw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100070000,
+                    "label": "企业服务",
+                    "extra": {
+                        "shortPinyin": "qyfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100080000,
+                    "label": "人工智能",
+                    "extra": {
+                        "shortPinyin": "rgzn",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100000220,
+                    "label": "智能硬件",
+                    "extra": {
+                        "shortPinyin": "znyj",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100160000,
+                    "label": "在线教育",
+                    "extra": {
+                        "shortPinyin": "zxjy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100150000,
+                    "label": "在线医疗",
+                    "extra": {
+                        "shortPinyin": "zxyl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100110000,
+                    "label": "新媒体",
+                    "extra": {
+                        "shortPinyin": "xmt",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100180000,
+                    "label": "物联网",
+                    "extra": {
+                        "shortPinyin": "wlw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100190000,
+                    "label": "新零售",
+                    "extra": {
+                        "shortPinyin": "xls",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100170000,
+                    "label": "区块链",
+                    "extra": {
+                        "shortPinyin": "qkl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100120000,
+                    "label": "游戏",
+                    "extra": {
+                        "shortPinyin": "yx",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100000250,
+                    "label": "社交网络",
+                    "extra": {
+                        "shortPinyin": "sjwl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100000260,
+                    "label": "在线招聘/求职",
+                    "extra": {
+                        "shortPinyin": "zxzp/qz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100130000,
+                    "label": "云计算/大数据",
+                    "extra": {
+                        "shortPinyin": "yjs/dsj",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100100000,
+                    "label": "网络/信息安全",
+                    "extra": {
+                        "shortPinyin": "wl/xxaq",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100210000,
+                    "label": "在线生活服务（O2O）",
+                    "extra": {
+                        "shortPinyin": "zxshfw（o2o）",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100200000,
+                    "label": "在线音乐/视频/阅读",
+                    "extra": {
+                        "shortPinyin": "zxyl/sp/yd",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100030000,
+                    "label": "互联网",
+                    "extra": {
+                        "shortPinyin": "hlw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100040000,
+                    "label": "IT服务",
+                    "extra": {
+                        "shortPinyin": "itfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100050000,
+                    "label": "计算机软件",
+                    "extra": {
+                        "shortPinyin": "jsjrj",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100060000,
+                    "label": "计算机硬件",
+                    "extra": {
+                        "shortPinyin": "jsjyj",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100090000,
+                    "label": "通信/网络设备",
+                    "extra": {
+                        "shortPinyin": "tx/wlsb",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100140000,
+                    "label": "运营商/增值服务",
+                    "extra": {
+                        "shortPinyin": "yys/zzfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100010000,
+                    "label": "电子/半导体/集成电路",
+                    "extra": {
+                        "shortPinyin": "dz/bdt/jcdl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100000230,
+                    "label": "消费电子产品",
+                    "extra": {
+                        "shortPinyin": "xfdzcp",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 100000240,
+                    "label": "光电子行业",
+                    "extra": {
+                        "shortPinyin": "gdzxy",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 400000000,
+            "label": "房地产/建筑",
+            "extra": {
+                "shortPinyin": "jzy",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 200010000,
+                    "label": "房地产开发",
+                    "extra": {
+                        "shortPinyin": "fdckfyjy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 200040000,
+                    "label": "土地与公共设施管理",
+                    "extra": {
+                        "shortPinyin": "tdyggssgl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 200020000,
+                    "label": "房地产中介",
+                    "extra": {
+                        "shortPinyin": "fdczj",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 200050000,
+                    "label": "物业管理",
+                    "extra": {
+                        "shortPinyin": "wyfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 400050000,
+                    "label": "建筑设计",
+                    "extra": {
+                        "shortPinyin": "jzsj",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 400030000,
+                    "label": "工程施工",
+                    "extra": {
+                        "shortPinyin": "tmgcjz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 400010000,
+                    "label": "建筑设备安装",
+                    "extra": {
+                        "shortPinyin": "fwjz/jzsbaz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 400040000,
+                    "label": "装饰装修",
+                    "extra": {
+                        "shortPinyin": "zzzszx",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 400060000,
+                    "label": "建材",
+                    "extra": {
+                        "shortPinyin": "jc",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 400070000,
+                    "label": "建筑工程检测",
+                    "extra": {
+                        "shortPinyin": "jzgcjc",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 300000000,
+            "label": "金融业",
+            "extra": {
+                "shortPinyin": "jry",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 300070000,
+                    "label": "银行",
+                    "extra": {
+                        "shortPinyin": "yx",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 300010000,
+                    "label": "保险",
+                    "extra": {
+                        "shortPinyin": "bxy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 300040000,
+                    "label": "基金",
+                    "extra": {
+                        "shortPinyin": "jj/ft",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 300060000,
+                    "label": "信托",
+                    "extra": {
+                        "shortPinyin": "xttz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 300080000,
+                    "label": "证券/期货",
+                    "extra": {
+                        "shortPinyin": "zq/qh",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 300090000,
+                    "label": "投资/融资",
+                    "extra": {
+                        "shortPinyin": "tz/rz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 300050000,
+                    "label": "汽车金融",
+                    "extra": {
+                        "shortPinyin": "qcjrfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 300030000,
+                    "label": "互联网金融/小额贷款",
+                    "extra": {
+                        "shortPinyin": "hlwjr/xedk",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 300020000,
+                    "label": "租赁/拍卖/典当/担保",
+                    "extra": {
+                        "shortPinyin": "dd",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 1200000000,
+            "label": "教育培训/科研",
+            "extra": {
+                "shortPinyin": "jypx/ky",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 1200020000,
+                    "label": "培训/辅导服务",
+                    "extra": {
+                        "shortPinyin": "px/kwjy/jyfz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1200040000,
+                    "label": "学校/学历教育",
+                    "extra": {
+                        "shortPinyin": "xxjy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1200030000,
+                    "label": "学术/科研",
+                    "extra": {
+                        "shortPinyin": "xs/ky",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1200010000,
+                    "label": "科学技术推广",
+                    "extra": {
+                        "shortPinyin": "kxjstgfwy",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 900000000,
+            "label": "广告/传媒/文化/体育",
+            "extra": {
+                "shortPinyin": "wh/ty/yl",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 800040000,
+                    "label": "广告/营销",
+                    "extra": {
+                        "shortPinyin": "ggy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 900010000,
+                    "label": "广播/影视",
+                    "extra": {
+                        "shortPinyin": "gb/ds/dy/lyzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800050000,
+                    "label": "会议/展览",
+                    "extra": {
+                        "shortPinyin": "hy/zlfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 900030000,
+                    "label": "文化艺术/娱乐",
+                    "extra": {
+                        "shortPinyin": "whys/yl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 900020000,
+                    "label": "体育",
+                    "extra": {
+                        "shortPinyin": "ty",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 900040000,
+                    "label": "新闻/出版",
+                    "extra": {
+                        "shortPinyin": "xw/cb",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 1300000000,
+            "label": "生物医药/医疗",
+            "extra": {
+                "shortPinyin": "swyyyl",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 1300030000,
+                    "label": "医院",
+                    "extra": {
+                        "shortPinyin": "yy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1300010000,
+                    "label": "卫生服务",
+                    "extra": {
+                        "shortPinyin": "wsfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1300040000,
+                    "label": "生物工程",
+                    "extra": {
+                        "shortPinyin": "swgc",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500170000,
+                    "label": "医药制造",
+                    "extra": {
+                        "shortPinyin": "yyzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1300050000,
+                    "label": "医疗检测",
+                    "extra": {
+                        "shortPinyin": "yyjc",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1300060000,
+                    "label": "医药批发/零售",
+                    "extra": {
+                        "shortPinyin": "yypfls",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500210000,
+                    "label": "医疗设备/器械",
+                    "extra": {
+                        "shortPinyin": "ylsb/qx",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1300000800,
+                    "label": "IVD",
+                    "extra": {
+                        "shortPinyin": "ivd",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1300000700,
+                    "label": "医美/健康服务",
+                    "extra": {
+                        "shortPinyin": "ym/jkfw",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 700000000,
+            "label": "批发/零售/贸易",
+            "extra": {
+                "shortPinyin": "pf/ls/my",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 700010000,
+                    "label": "快速消费品",
+                    "extra": {
+                        "shortPinyin": "ksxfp",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700030000,
+                    "label": "耐用消费品",
+                    "extra": {
+                        "shortPinyin": "nyxfp",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700040000,
+                    "label": "零售/批发",
+                    "extra": {
+                        "shortPinyin": "ls/pf",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700050000,
+                    "label": "食品/饮料",
+                    "extra": {
+                        "shortPinyin": "sp/yl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700060000,
+                    "label": "烟草/酒业",
+                    "extra": {
+                        "shortPinyin": "yj",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700070000,
+                    "label": "日化",
+                    "extra": {
+                        "shortPinyin": "rh",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700110000,
+                    "label": "服装/纺织/皮革",
+                    "extra": {
+                        "shortPinyin": "fz/fz/pg",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700000140,
+                    "label": "奢侈品",
+                    "extra": {
+                        "shortPinyin": "scp",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700080000,
+                    "label": "玩具/礼品",
+                    "extra": {
+                        "shortPinyin": "wj/lp",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700090000,
+                    "label": "珠宝/首饰",
+                    "extra": {
+                        "shortPinyin": "zb/ss",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700130000,
+                    "label": "办公用品/设备",
+                    "extra": {
+                        "shortPinyin": "bgypsb",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700100000,
+                    "label": "工艺品/收藏品/艺术品",
+                    "extra": {
+                        "shortPinyin": "gyp/scp",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700120000,
+                    "label": "家具/家居/家电",
+                    "extra": {
+                        "shortPinyin": "jj/jj/jd",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 700020000,
+                    "label": "贸易/进出口",
+                    "extra": {
+                        "shortPinyin": "my/jckdl/pm",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 500000000,
+            "label": "制造业",
+            "extra": {
+                "shortPinyin": "zzy",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 500010000,
+                    "label": "船舶/航空/航天/火车制造",
+                    "extra": {
+                        "shortPinyin": "cb/hk/ht/hczz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500020000,
+                    "label": "电气机械/电力设备",
+                    "extra": {
+                        "shortPinyin": "dqjx/qczz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500030000,
+                    "label": "电子设备制造",
+                    "extra": {
+                        "shortPinyin": "dzsbzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500000280,
+                    "label": "机器人",
+                    "extra": {
+                        "shortPinyin": "jqr",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500060000,
+                    "label": "钢铁/有色金属冶炼及加工",
+                    "extra": {
+                        "shortPinyin": "gthysjsyljjg",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500220000,
+                    "label": "专用设备制造",
+                    "extra": {
+                        "shortPinyin": "zysbzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500000270,
+                    "label": "军工制造",
+                    "extra": {
+                        "shortPinyin": "jgzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500090000,
+                    "label": "金属制品业",
+                    "extra": {
+                        "shortPinyin": "jszpy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500140000,
+                    "label": "通用设备制造",
+                    "extra": {
+                        "shortPinyin": "tysbzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500180000,
+                    "label": "仪器仪表制造",
+                    "extra": {
+                        "shortPinyin": "yqybzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500000260,
+                    "label": "摩托车/自行车制造",
+                    "extra": {
+                        "shortPinyin": "mtc/zxczz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500050000,
+                    "label": "非金属矿物制品业",
+                    "extra": {
+                        "shortPinyin": "fjskwzpy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500000250,
+                    "label": "新材料",
+                    "extra": {
+                        "shortPinyin": "xcl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500070000,
+                    "label": "化学纤维制造业",
+                    "extra": {
+                        "shortPinyin": "hxxwzzy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500080000,
+                    "label": "化学原料/化学制品",
+                    "extra": {
+                        "shortPinyin": "hxyl/hxzp",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500130000,
+                    "label": "日化产品制造",
+                    "extra": {
+                        "shortPinyin": "rhcpzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500040000,
+                    "label": "纺织业/服饰产品加工制造",
+                    "extra": {
+                        "shortPinyin": "fzy/fscpjgzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500100000,
+                    "label": "农副产品加工制造",
+                    "extra": {
+                        "shortPinyin": "nfcpjgzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500120000,
+                    "label": "燃料资源加工制造",
+                    "extra": {
+                        "shortPinyin": "rlzyjgzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500150000,
+                    "label": "橡胶和塑料制品",
+                    "extra": {
+                        "shortPinyin": "xjhslzp",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500240000,
+                    "label": "文体/办公设备制造",
+                    "extra": {
+                        "shortPinyin": "wt/bgsbzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500200000,
+                    "label": "家具制造",
+                    "extra": {
+                        "shortPinyin": "zz/jjzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500190000,
+                    "label": "印刷/包装/造纸",
+                    "extra": {
+                        "shortPinyin": "ys/wtypzz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 500230000,
+                    "label": "工业自动化",
+                    "extra": {
+                        "shortPinyin": "gyzdh",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 1600000000,
+            "label": "汽车",
+            "extra": {
+                "shortPinyin": "qc",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 500110000,
+                    "label": "汽车研发/制造",
+                    "extra": {
+                        "shortPinyin": "qczz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1600030000,
+                    "label": "新能源汽车",
+                    "extra": {
+                        "shortPinyin": "xnyqc",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1600000400,
+                    "label": "汽车智能互联",
+                    "extra": {
+                        "shortPinyin": "qcznhl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1600020000,
+                    "label": "汽车零部件",
+                    "extra": {
+                        "shortPinyin": "qclbj",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1600010000,
+                    "label": "汽车4S店/经销商",
+                    "extra": {
+                        "shortPinyin": "qcxsyfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1600000500,
+                    "label": "汽车后市场",
+                    "extra": {
+                        "shortPinyin": "qchsc",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 1000000000,
+            "label": "交通运输/仓储/物流",
+            "extra": {
+                "shortPinyin": "jtys/cc/wl",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 1000010000,
+                    "label": "火车站/港口/汽车站/路政",
+                    "extra": {
+                        "shortPinyin": "hcz/gk/qcz/lz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1000030000,
+                    "label": "客运服务",
+                    "extra": {
+                        "shortPinyin": "mh/tl/gl/slky",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1000020000,
+                    "label": "货运/物流/仓储",
+                    "extra": {
+                        "shortPinyin": "hy/wlcc",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1000040000,
+                    "label": "邮政/快递",
+                    "extra": {
+                        "shortPinyin": "yz/kd",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 800000000,
+            "label": "专业服务",
+            "extra": {
+                "shortPinyin": "zyfw",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 800020000,
+                    "label": "法律服务",
+                    "extra": {
+                        "shortPinyin": "flfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800120000,
+                    "label": "咨询服务",
+                    "extra": {
+                        "shortPinyin": "zxfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800140000,
+                    "label": "翻译服务",
+                    "extra": {
+                        "shortPinyin": "fyfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800080000,
+                    "label": "人力资源服务",
+                    "extra": {
+                        "shortPinyin": "rlzyfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800010000,
+                    "label": "财务/审计/税务",
+                    "extra": {
+                        "shortPinyin": "cw/sj/sw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800030000,
+                    "label": "工程技术与设计服务",
+                    "extra": {
+                        "shortPinyin": "gcjsysjfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800060000,
+                    "label": "检测/认证",
+                    "extra": {
+                        "shortPinyin": "jc/rz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800070000,
+                    "label": "景区/商业/市场等综合管理",
+                    "extra": {
+                        "shortPinyin": "jq/sy/scdzhgl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800090000,
+                    "label": "商业代理服务",
+                    "extra": {
+                        "shortPinyin": "sydlfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800100000,
+                    "label": "专利/商标/知识产权",
+                    "extra": {
+                        "shortPinyin": "zl/sb/zscq",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800130000,
+                    "label": "租赁服务",
+                    "extra": {
+                        "shortPinyin": "zlfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 800110000,
+                    "label": "专业技术服务",
+                    "extra": {
+                        "shortPinyin": "zyjsfw",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 1500000000,
+            "label": "生活服务",
+            "extra": {
+                "shortPinyin": "shfw",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 1500010000,
+                    "label": "餐饮服务",
+                    "extra": {
+                        "shortPinyin": "cyy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1500020000,
+                    "label": "酒店/民宿",
+                    "extra": {
+                        "shortPinyin": "jd/ms",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1500040000,
+                    "label": "旅游服务",
+                    "extra": {
+                        "shortPinyin": "lyy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1500060000,
+                    "label": "婚庆/摄影",
+                    "extra": {
+                        "shortPinyin": "hq/sy",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1500050000,
+                    "label": "美发/美容/保健",
+                    "extra": {
+                        "shortPinyin": "mr/bj/ys",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1500000900,
+                    "label": "宠物服务",
+                    "extra": {
+                        "shortPinyin": "cwfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1500001000,
+                    "label": "家政服务",
+                    "extra": {
+                        "shortPinyin": "jzfw",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1500001100,
+                    "label": "回收/维修",
+                    "extra": {
+                        "shortPinyin": "hs/wx",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1500000800,
+                    "label": "休闲/娱乐",
+                    "extra": {
+                        "shortPinyin": "xx/yl",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1500000700,
+                    "label": "搬家/生活配送",
+                    "extra": {
+                        "shortPinyin": "bj/shps",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1500030000,
+                    "label": "居民服务",
+                    "extra": {
+                        "shortPinyin": "jmfw",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 1100000000,
+            "label": "能源/环保/矿产",
+            "extra": {
+                "shortPinyin": "ny/hb/kc",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 1100040000,
+                    "label": "石油/石化",
+                    "extra": {
+                        "shortPinyin": "sy/sh",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1100060000,
+                    "label": "化工",
+                    "extra": {
+                        "shortPinyin": "hg",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1100010000,
+                    "label": "电力/水利/热力/燃气",
+                    "extra": {
+                        "shortPinyin": "dl/sl/rl/rq",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1100050000,
+                    "label": "新能源",
+                    "extra": {
+                        "shortPinyin": "xny",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1100020000,
+                    "label": "环保",
+                    "extra": {
+                        "shortPinyin": "hb",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1100030000,
+                    "label": "矿产/采掘",
+                    "extra": {
+                        "shortPinyin": "kc/cj",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 1400000000,
+            "label": "政府/非盈利机构",
+            "extra": {
+                "shortPinyin": "gggl/shbz",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 1400010000,
+                    "label": "政府/公共事业",
+                    "extra": {
+                        "shortPinyin": "gjjg",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1400020000,
+                    "label": "社团/组织/社会保障",
+                    "extra": {
+                        "shortPinyin": "st/zz/shbz",
+                        "level": "2"
+                    },
+                    "children": []
+                },
+                {
+                    "value": 1300020000,
+                    "label": "养老/孤儿/看护",
+                    "extra": {
+                        "shortPinyin": "yl/ge/khdshfw",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+            "value": 600000000,
+            "label": "农/林/牧/渔",
+            "extra": {
+                "shortPinyin": "nlmy",
+                "level": "1"
+            },
+            "children": [
+                {
+                    "value": 600010000,
+                    "label": "农/林/牧/渔",
+                    "extra": {
+                        "shortPinyin": "nlmy",
+                        "level": "2"
+                    },
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
